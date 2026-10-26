@@ -1,0 +1,147 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Nostra for questions about our products, orders, and services.">
+    <title>Contact Us | Nostra</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        Free shipping on orders over $50!
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">Nostra<span>.</span></a>
+
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Banner -->
+        <section class="contact-banner">
+            <p class="eyebrow">WE'RE HERE TO HELP</p>
+            <h1>Contact Us</h1>
+            <p>Have a question? We'd love to hear from you.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-info">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h2>Let's Talk</h2>
+                <p>
+                    Whether you have a question about our collections,
+                    your order, or our services, send us a message.
+                </p>
+
+                <div class="contact-detail">
+                    <h3>Email</h3>
+                    <p>support@nostra.example</p>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Business Hours</h3>
+                    <p>Monday – Friday</p>
+                    <p>9:00 AM – 5:00 PM</p>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Our Promise</h3>
+                    <p>We're committed to making your shopping experience simple and enjoyable.</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Your Name</label>
+                        <input
+                            type="text"
+                            id="contact-name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+                        <input
+                            type="email"
+                            id="contact-email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input
+                            type="text"
+                            id="contact-subject"
+                            name="subject"
+                            placeholder="What is your message about?"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message-input">Your Message</label>
+                        <textarea
+                            id="contact-message-input"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message here..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="shop-button">Send Message</button>
+
+                    <p id="contact-message" class="form-message" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <a href="index.html" class="logo">Nostra<span>.</span></a>
+                <p>Discover your style with Nostra.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="collections.html">Collections</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Nostra. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>

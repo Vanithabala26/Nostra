@@ -1,0 +1,331 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nostra - Collections</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        Fresh finds for your everyday wardrobe ✦ Explore the collection
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <h1 class="logo">Nostra<span>.</span></h1>
+
+        <button class="menu-toggle" aria-label="Toggle navigation"
+            aria-expanded="false">☰</button>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html" class="active">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+    </header>
+
+    <!-- Page Heading -->
+    <section class="collection-banner">
+
+        <p class="eyebrow">THE NOSTRA EDIT</p>
+
+        <h2>Discover Your <span>Style.</span></h2>
+
+        <p>
+            Explore our collection of everyday essentials and
+            fashionable favourites.
+        </p>
+
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections-section">
+
+        <!-- Filters Sidebar -->
+        <aside class="filters">
+
+            <div class="filter-heading">
+                <h3>Filters</h3>
+                <button type="button" id="clear-filters">Clear All</button>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="filter-group">
+
+                <h4>Category</h4>
+
+                <label>
+                    <input type="checkbox" name="category" value="casual">
+                    Casual
+                </label>
+
+                <label>
+                    <input type="checkbox" name="category" value="formal">
+                    Formal
+                </label>
+
+                <label>
+                    <input type="checkbox" name="category" value="accessories">
+                    Accessories
+                </label>
+
+            </div>
+
+            <!-- Colour Filter -->
+            <div class="filter-group">
+
+                <h4>Colour</h4>
+
+                <label>
+                    <input type="checkbox" name="color" value="black">
+                    Black
+                </label>
+
+                <label>
+                    <input type="checkbox" name="color" value="white">
+                    White
+                </label>
+
+                <label>
+                    <input type="checkbox" name="color" value="beige">
+                    Beige
+                </label>
+
+                <label>
+                    <input type="checkbox" name="color" value="blue">
+                    Blue
+                </label>
+
+            </div>
+
+            <!-- Collection Filter -->
+            <div class="filter-group">
+
+                <h4>Collection</h4>
+
+                <label>
+                    <input type="checkbox" name="arrival" value="new">
+                    New Arrivals
+                </label>
+
+                <label>
+                    <input type="checkbox" name="arrival" value="popular">
+                    Popular
+                </label>
+
+            </div>
+
+        </aside>
+
+        <!-- Products Area -->
+        <div class="collection-products">
+
+            <!-- Search Bar -->
+            <div class="collection-toolbar">
+
+                <p>
+                    <strong id="result-count">6</strong>
+                    Products Found
+                </p>
+
+                <div class="search-box">
+
+                    <input
+                        type="search"
+                        id="product-search"
+                        placeholder="Search products..."
+                        aria-label="Search products">
+
+                    <button
+                        type="button"
+                        id="clear-search"
+                        aria-label="Clear search">
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-container" id="product-grid">
+
+                <!-- Product 1 -->
+                <div class="product-card"
+                    data-name="Everyday Jacket"
+                    data-category="casual"
+                    data-color="beige"
+                    data-arrival="new">
+
+                    <div class="product-image">
+                        <img
+                            src="./images/mw-img1.jpg"
+                            alt="Everyday jacket">
+
+                        <span class="badge">NEW</span>
+                    </div>
+
+                    <h3>Everyday Jacket</h3>
+                    
+                    <h4>€54.00</h4>
+
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card"
+                    data-name="Weekend Shirt"
+                    data-category="casual"
+                    data-color="white"
+                    data-arrival="popular">
+
+                    <div class="product-image">
+                        <img
+                            src="./images/mw-img2.jpg"
+                            alt="White casual shirt">
+
+                        <span class="badge">POPULAR</span>
+                    </div>
+
+                    <h3>Weekend Shirt</h3>
+                  
+                    <h4>€39.00</h4>
+
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card"
+                    data-name="City Blazer"
+                    data-category="formal"
+                    data-color="black"
+                    data-arrival="new">
+
+                    <div class="product-image">
+                        <img
+                            src="./images/mw-img3.jpg"
+                            alt="Black blazer">
+
+                        <span class="badge">NEW</span>
+                    </div>
+
+                    <h3>Weekend Shirt</h3>
+                   
+                    <h4>€68.00</h4>
+
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card"
+                    data-name="Soft Knit Sweater"
+                    data-category="casual"
+                    data-color="beige"
+                    data-arrival="popular">
+
+                    <div class="product-image">
+                        <img
+                            src="./images/mw-img4.jpg"
+                            alt="Knit sweater">
+
+                        <span class="badge">POPULAR</span>
+                    </div>
+
+                    <h3>Casual shirt</h3>
+                    
+                    <h4>€46.00</h4>
+
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card"
+                    data-name="Classic Blue Shirt"
+                    data-category="formal"
+                    data-color="blue"
+                    data-arrival="new">
+
+                    <div class="product-image">
+                        <img
+                            src="./images/mw-img2.jpg"
+                            alt="Blue shirt">
+
+                        <span class="badge">NEW</span>
+                    </div>
+
+                    <h3>Classic Blue Shirt</h3>
+                 
+                    <h4>€42.00</h4>
+
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card"
+                    data-name="Everyday Tote"
+                    data-category="accessories"
+                    data-color="beige"
+                    data-arrival="popular">
+
+                    <div class="product-image">
+                        <img
+                            src="./images/mw-img3.jpg"
+                            alt="Everyday shirt">
+
+                        <span class="badge">POPULAR</span>
+                    </div>
+
+                    <h3>Everyday shirt</h3>
+                  
+                    <h4>€29.00</h4>
+
+                </div>
+
+                
+
+            </div>
+
+            <!-- No Results Message -->
+            <p id="empty-state" class="empty-state" hidden>
+                No products found. Try another search or clear your filters.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <h2>Nostra<span>.</span></h2>
+
+        <p>Everyday fashion. Your own style.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Nostra. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+```
+                   
